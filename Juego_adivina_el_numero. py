@@ -1,0 +1,22 @@
+import random
+
+numero_secreto = random.randint(1, 100)
+contador = 0
+
+print("=== JUEGO ADIVINAR NÚMERO ===")
+
+while True:
+    intento = int(input("Adivina el número: "))
+    contador += 1
+
+    if intento < numero_secreto:
+        print("El número secreto es MAYOR")
+    elif intento > numero_secreto:
+        print("El número secreto es MENOR")
+    else:
+        break
+
+print("FELICIDADES")
+print("Adivinaste el número")
+print("Intentos realizados:", contador)
+exit()
